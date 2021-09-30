@@ -76,19 +76,15 @@ console.log("🚀 ~ file: script.js ~ line 72 ~ dados()", dados())
 // Crie uma função para verificar se um valor é Truthy
 
 function valueIstrue(value) {
-    if (typeof value === "number") {
-        return "is true"
-    } else {
-        return "is false"
-    }
+   return !!value
 }
 console.log("🚀 ~ file: script.js ~ line 86 ~ valueIstrue()", valueIstrue(0))
 
 
-// Crie uma função matemática que retorne o perímetro de um quadrado // lembrando: perímetro é a soma dos quatro lados do quadrado
+// Crie uma função matemática que retorne o perímetro de um quadrado lembrando: perímetro é a soma dos quatro lados do quadrado
 
 function perimetro(lado){
-    return lado * lado
+    return lado * 4
     }
     perimetro(5)
     console.log("🚀 ~ file: script.js ~ line 86 ~ perimetro(5)", perimetro(5))
@@ -104,7 +100,7 @@ console.log("🚀 ~ file: script.js ~ line 104 ~ fullName(Raissa,Campos)", fullN
 
 // Crie uma função que verifica se um número é par
 
-function isPar(value) {
+function isEven (value) {
     const valueRest = value / 2
     if (Number.isInteger(valueRest)) {
         return 'é par'
@@ -112,21 +108,32 @@ function isPar(value) {
         return 'não é par'
     }
 }
- console.log("🚀 ~ file: script.js ~ line 115 ~ isPar()", isPar(80))
+ console.log("🚀 ~ file: script.js ~ line 115 ~ isPar()", isEven(80))
 
 // Crie uma função que retorne o tipo de dado do argumento passado nela (typeof)
 
-// addEventListener é uma função nativa do JavaScript o primeiro parâmetro é o evento que ocorre e o segundo o Callback
-// utilize essa função para mostrar no console o seu nome completo quando o evento de "scroll" ocorrer
+function isType(value){
+    return typeof value
+}
+console.log("🚀 ~ file: script.js ~ line 120 ~ isType ~ isType(value)", isType(""))
+
+
+// addEventListener é uma função nativa do JavaScript o primeiro parâmetro é o evento que ocorre e o segundo o Callback,  utilize essa função para mostrar no console o seu nome completo quando o evento de "scroll" ocorrer
+
+
+addEventListener('scroll', () => {
+    console.log('Raissa Campos');
+   });
 
 //Corrija o erro abaixo:
 
-// function precisoVisitar(paisesVisitados) {
-//     var totalPaises = 193;
-//     return `Ainda faltam ${totalPaises - paisesVisitados} países pa
-//    }
-//    function jaVisitei(paisesVisitados) {
-//     return `Já visitei ${paisesVisitados} do total de ${totalPaises
-//    }
-//    precisoVisitar(20);
-//    jaVisitei(20)
+    var totalPaises = 193;
+
+    function precisoVisitar(paisesVisitados) {
+    return `Ainda faltam ${totalPaises - paisesVisitados} países para serem visitados`
+    }
+    function jaVisitei(paisesVisitados) {
+    return `Já visitei ${paisesVisitados} do total de ${totalPaises}`
+    }    
+
+   console.log("🚀 ~ file: script.js ~ line 137 ~ precisoVisitar(20);", precisoVisitar(60))
