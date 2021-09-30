@@ -136,4 +136,4 @@ addEventListener('scroll', () => {
     return `Já visitei ${paisesVisitados} do total de ${totalPaises}`
     }    
 
-   console.log("🚀 ~ file: script.js ~ line 137 ~ precisoVisitar(20);", precisoVisitar(40))
+   console.log("🚀 ~ file: script.js ~ line 137 ~ precisoVisitar(20);", precisoVisitar(45))
