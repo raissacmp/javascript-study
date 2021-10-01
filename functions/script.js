@@ -26,7 +26,7 @@ function pi() {
     return 'Você não gosta de nada';
     }
    }
-   corFavorita(); // retorna 'Você não gosta de nada
+   corFavorita(); // retorna 'Você não gosta de nada'
    console.log("🚀 ~ file: script.js ~ line 29 ~ corFavorita()", corFavorita('azul'))
 
    addEventListener('click', function() {
