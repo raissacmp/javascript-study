@@ -30,9 +30,37 @@ while (i < 10) {
 //  }
 // }
 
-const frutas = ['banana', "uva", "amora", "abacaxi"];
+// const frutas = ['banana', "uva", "amora", "abacaxi"];
 
-frutas.forEach((item, index) => { //item e a posição, pode ser qualuqer nome, porém exitem melhores praticas.
-    console.log(item, index)
+// frutas.forEach((item, index) => { //item e a posição, pode ser qualuqer nome, porém exitem melhores praticas.
+//     console.log(item, index)
+// })
+
+//Exercicos
+
+// Crie uma array com os anos que o Brasil ganhou a copa 1959, 1962, 1970, 1994, 2002
+
+const brasilWinCopa = ["1959", "1962", "1970", "1994", "2002"]
+
+// Interaja com a array utilizando um loop, para mostrar no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}
+
+brasilWinCopa.forEach((item) => {
+    console.log("🚀 ~ file: script.js ~ line 50 ~ brasilWinCopa.forEach ~ item", `O brasil ganhou a copa de ${item}` )
 })
 
+
+// // Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+
+const frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
+for (var fruta = 0; fruta < frutas.length; fruta++) {
+    console.log(frutas[fruta]);
+    if(frutas[fruta] === 'Pera') {
+        break;
+    }
+}
+
+// Coloque a última fruta da array acima em uma variável sem remover a mesma da array
+
+// const lastFruit = frutas[4] //precisa saber o valor exato no array
+const lastFruit = frutas[frutas.length - 1] //n precisa saber o valor exato no array
+console.log("🚀 ~ file: script.js ~ line 65 ~ lastFruit", lastFruit)
